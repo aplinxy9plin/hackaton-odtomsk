@@ -7,7 +7,7 @@ if (!isset($_REQUEST)) {
   $data = array();                                                                    
   $data_string = json_encode($data);                                                                                   
    
-  $ch = curl_init('http://api.pss.tomsk.ru');                                                                      
+  $ch = curl_init('http://api.pss.tomsk.ru/!!!!.txt');                                                                      
   curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
   curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
