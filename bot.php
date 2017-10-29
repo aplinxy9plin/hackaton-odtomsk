@@ -6,10 +6,10 @@ if (!isset($_REQUEST)) {
 } 
 
 //Строка для подтверждения адреса сервера из настроек Callback API 
-$confirmation_token = '3ef5f9f0'; 
+$confirmation_token = ''; 
 
 //Ключ доступа сообщества 
-$token = 'e3715ed08308641027043bfa6e5f86272765853d2736cb92b8783d32ba3fc7836c649e819a6ca3c8985f0'; 
+$token = ''; 
 
 //Получаем и декодируем уведомление 
 $data = json_decode(file_get_contents('php://input')); 
