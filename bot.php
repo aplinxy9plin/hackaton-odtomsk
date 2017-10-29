@@ -31,7 +31,7 @@ switch ($data->type) {
     //затем с помощью users.get получаем данные об авторе 
     $user_info = json_decode(file_get_contents("https://api.vk.com/method/users.get?user_ids={$user_id}&v=5.0"));
   // Коннектимся к базе
-    $mysqli = new mysqli("localhost","id1939899_top4ek","q2w3e4r5","id1939899_top4ek");
+    $mysqli = new mysqli("server","login","password","database");
     $mysqli->set_charset("utf8");
     // Проверка на наличие в бд пользователя
     $res = $mysqli->query("SELECT `user_id` FROM `hackaton` WHERE user_id = $user_id");
