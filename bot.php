@@ -1,4 +1,5 @@
 <?php
+
 	$var = file_get_contents('!!!!.txt');
 	$array = (explode("$", $var));
 if (!isset($_REQUEST)) { 
